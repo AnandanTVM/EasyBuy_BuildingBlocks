@@ -1,0 +1,19 @@
+{
+	"author": {
+		"name": "tkcli"
+	},
+	"bundleDependencies": false,
+	"dependencies": {
+		"@jatahworx/bhive-toolkits": "^7.0.2"
+	},
+	"deprecated": false,
+	"description": "",
+	"license": "ISC",
+	"main": "index.js",
+	"name": "easybuy",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"studioVersion": "7.0.2",
+	"version": "1.0.0"
+}

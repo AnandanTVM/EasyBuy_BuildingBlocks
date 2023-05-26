@@ -1,0 +1,14 @@
+.background-Templateimg {
+    background: url('../assets/images/example.png') no-repeat;
+}
+
+.background-image-position {
+    background-size: contain;
+    background-position: center;
+    width: 25px;
+    height: auto;
+}
+
+.margin-right {
+    margin-right: 1em;
+}
