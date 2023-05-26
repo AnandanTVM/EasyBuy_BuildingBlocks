@@ -17,7 +17,8 @@
 		"Components": [
 			"autoGen_component",
 			"Scaner_Componet",
-			"cardLoder_Componet"
+			"cardLoder_Componet",
+			"navBar_Componet"
 		]
 	}
 }
