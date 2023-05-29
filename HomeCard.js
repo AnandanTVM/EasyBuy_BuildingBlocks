@@ -3,6 +3,8 @@ let Component = require('@jatahworx/bhive-toolkits').Component;
 let Attribute = require('@jatahworx/bhive-toolkits').Attribute;
 //__append_require_start
 
+let Homeflow = require("easybuy/flow/homecard")
+
 module.exports = class HomeCard extends Component {
     constructor() {
         const name = 'HomeCard';
@@ -93,6 +95,14 @@ module.exports = class HomeCard extends Component {
             })
         );
 
+        super.addAttribute(
+            new Attribute({
+                key: 'button-click-function',
+                value: 'gotoScan',
+                type: 'a'
+            })
+        );
+
         //__append__Attribute
 
 
@@ -134,12 +144,18 @@ module.exports = class HomeCard extends Component {
           border-radius: 10px !important;
           width: 100%;
           color: white;
-          height: 50px;" (click)="gotoScan()">%Button-Text%</button>
+          height: 50px;" (click)="%button-click-function%()">%Button-Text%</button>
         </mat-card-actions>
       </mat-card>`
     }
     set template(templateString) { }
 
     //__append_flows_start
+
+    get flows(){
+        return{
+            flow:Homeflow
+        }
+    }
 
 };

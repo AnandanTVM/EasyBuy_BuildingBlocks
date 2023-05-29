@@ -12,3 +12,11 @@
 .margin-right {
     margin-right: 1em;
 }
+
+login-background-image-position {
+    margin-left: 1em;
+    background-size: contain;
+    background-position: center;
+    
+    width: 25px;
+}

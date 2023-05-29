@@ -19,9 +19,11 @@
 			"Scaner_Componet",
 			"cardLoder_Componet",
 			"navBar_Componet",
+			"profileComponent",
 			"HomeMinCard",
 			"HomeCard",
-			"transactioncard_Componet"
+			"transactioncard_Componet",
+			"loginComponent"
 		]
 	}
 }
