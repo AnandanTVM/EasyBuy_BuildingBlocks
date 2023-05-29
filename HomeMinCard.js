@@ -3,6 +3,8 @@ let Component = require('@jatahworx/bhive-toolkits').Component;
 let Attribute = require('@jatahworx/bhive-toolkits').Attribute;
 //__append_require_start
 
+let Homeflow = require("easybuy/flow/homemincard")
+
 module.exports = class HomeMinCard extends Component {
     constructor() {
         const name = 'HomeMinCard';
@@ -48,7 +50,7 @@ module.exports = class HomeMinCard extends Component {
         super.addAttribute(
             new Attribute({
                 key: 'ngForData',
-                value: ``,
+                value: `page.statistics`,
                 type: 'a'
             })
         );
@@ -119,10 +121,17 @@ module.exports = class HomeMinCard extends Component {
             <span style="color:%valueColor%;">
             {{detail.value}}
             </span></div>
+            </div>
       </div>`
     }
     set template(templateString) { }
 
     //__append_flows_start
+
+    get flows(){
+        return{
+            flow:Homeflow
+        }
+    }
 
 };
