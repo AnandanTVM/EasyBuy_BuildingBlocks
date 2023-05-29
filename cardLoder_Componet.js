@@ -1,57 +1,56 @@
-'use strict';
-let Component = require('@jatahworx/bhive-toolkits').Component;
-let Attribute = require('@jatahworx/bhive-toolkits').Attribute;
+"use strict";
+let Component = require("@jatahworx/bhive-toolkits").Component;
+let Attribute = require("@jatahworx/bhive-toolkits").Attribute;
 //__append_require_start
 
 module.exports = class cardLoder_Componet extends Component {
-    constructor() {
-        const name = 'cardLoder_Componet';
-        const designerTemplate = `<div class=".ad-flex">
+  constructor() {
+    const name = "cardLoder_Componet";
+    const designerTemplate = `<div class=".ad-flex">
                             <div class="margin-right background-Templateimg background-image-position" ></div>
                             <div class="margin-right">Loding</div>
                             </div>`;
-        const paletteTemplate = 'cardLoder_Componet';
-        const componentLabel = 'cardLoder_Componet';
-        const templateUrl = 'articles/#!components-guide-8/cardLoder_Componet';
-        super({
-            name,
-            designerTemplate,
-            paletteTemplate,
-            componentLabel,
-            templateUrl
-        });
+    const paletteTemplate = "cardLoder_Componet";
+    const componentLabel = "cardLoder_Componet";
+    const templateUrl = "articles/#!components-guide-8/cardLoder_Componet";
+    super({
+      name,
+      designerTemplate,
+      paletteTemplate,
+      componentLabel,
+      templateUrl,
+    });
 
-        super.addAttribute(
-            new Attribute({
-                key: 'componentLabel',
-                value: 'cardLoder_Componet',
-                type: 'kv',
-                useAsLabel: true
-            })
-        );
-        super.addAttribute(
-            new Attribute({
-                key: '(click)',
-                value: '',
-                type: 'kv',
-            })
-        );
+    super.addAttribute(
+      new Attribute({
+        key: "componentLabel",
+        value: "cardLoder_Componet",
+        type: "kv",
+        useAsLabel: true,
+      })
+    );
+    super.addAttribute(
+      new Attribute({
+        key: "(click)",
+        value: "",
+        type: "kv",
+      })
+    );
 
-        super.addAttribute(
-            new Attribute({
-                key: '[disabled]',
-                value: '',
-                type: 'kv'
-            })
-        );
+    super.addAttribute(
+      new Attribute({
+        key: "[disabled]",
+        value: "",
+        type: "kv",
+      })
+    );
 
-        //__append__Attribute
+    //__append__Attribute
 
-
-        super.setType(Component.COMPONENT_TYPE_TITLES.OTHERS.val);
-    }
-    get template() {
-        return `<cardLoder_Componet %bCustomProps% %[disabled]% %style% %class% %(click)%>
+    super.setType(Component.COMPONENT_TYPE_TITLES.OTHERS.val);
+  }
+  get template() {
+    return `<cardLoder_Componet %bCustomProps% %[disabled]% %style% %class% %(click)%>
 
         <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
   <div fxLayout="row wrap" style="height: 50; display: flex; flex-direction: column; justify-content: center; 00000align-items: center;" class="container" fxLayoutAlign="start stretch" [fxShow]="true">
@@ -122,10 +121,9 @@ module.exports = class cardLoder_Componet extends Component {
     }
   }
   </style>
-            </cardLoder_Componet>`
-    }
-    set template(templateString) { }
+            </cardLoder_Componet>`;
+  }
+  set template(templateString) {}
 
-    //__append_flows_start
-
+  //__append_flows_start
 };
