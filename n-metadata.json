@@ -21,7 +21,8 @@
 			"navBar_Componet",
 			"profileComponent",
 			"HomeMinCard",
-			"HomeCard"
+			"HomeCard",
+			"loginComponent"
 		]
 	}
 }

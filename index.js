@@ -5,6 +5,7 @@ const navBar_Componet = require('./navBar_Componet.js');
 const profileComponent = require('./profileComponent.js');
 const HomeMinCard = require('./HomeMinCard.js');
 const HomeCard = require('./HomeCard.js');
+const loginComponent = require('./loginComponent.js');
 //__append_require_start
 module.exports = {
   components: {
@@ -15,6 +16,7 @@ module.exports = {
     profileComponent,
     HomeMinCard,
     HomeCard,
+    loginComponent,
     //__append_component
   },
   attributeTypes: {
