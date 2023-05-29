@@ -127,7 +127,7 @@ module.exports = class PROFILE extends Component {
         <div style="width: 100%">
         <div *ngFor="let item of page.settingList" style="width:100%;
            padding: 10px; margin: 0px 0px ;">
-           <div fxLayout="row wrap" style="margin-top: 1rem;
+           <div (click)="item.function" fxLayout="row wrap" style="margin-top: 1rem;
               margin-right: 145px !important;" fxLayoutAlign="none stretch" [fxShow]="true"><img src="{{item.img}}"
               style="margin:0px 25px; height:22px!important;"><span style="float: right;
               margin-right: 5px;">

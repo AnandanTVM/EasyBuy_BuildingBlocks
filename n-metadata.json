@@ -18,7 +18,8 @@
 			"autoGen_component",
 			"Scaner_Componet",
 			"cardLoder_Componet",
-			"navBar_Componet"
+			"navBar_Componet",
+			"profileComponent"
 		]
 	}
 }
