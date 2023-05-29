@@ -8,7 +8,7 @@ module.exports = class transactioncard_Componet extends Component {
     const name = "transactioncard_Componet";
     const designerTemplate = `<div class=".ad-flex">
                             <div class="margin-right background-Templateimg background-image-position" ></div>
-                            <div class="margin-right"> auto generated component </div>
+                            <div class="margin-right"> Transaction Card  </div>
                             </div>`;
     const paletteTemplate = "transactioncard_Componet";
     const componentLabel = "transactioncard_Componet";
