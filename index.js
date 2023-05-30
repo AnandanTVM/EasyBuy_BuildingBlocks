@@ -5,6 +5,7 @@ const navBar_Componet = require('./navBar_Componet.js');
 const profileComponent = require('./profileComponent.js');
 const HomeMinCard = require('./HomeMinCard.js');
 const HomeCard = require('./HomeCard.js');
+const transactioncard_Componet = require('./transactioncard_Componet.js');
 const loginComponent = require('./loginComponent.js');
 //__append_require_start
 module.exports = {
@@ -16,6 +17,7 @@ module.exports = {
     profileComponent,
     HomeMinCard,
     HomeCard,
+    transactioncard_Componet,
     loginComponent,
     //__append_component
   },
