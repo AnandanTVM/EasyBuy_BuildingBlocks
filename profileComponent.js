@@ -81,7 +81,20 @@ module.exports = class PROFILE extends Component {
                 type: 'a',
             })
         );
-
+        super.addAttribute(
+            new Attribute({
+                key: 'settingList',
+                value: 'page.settingList',
+                type: 'a',
+            })
+        );
+        super.addAttribute(
+            new Attribute({
+                key: 'callfunction-name',
+                value: 'callfunction',
+                type: 'a',
+            })
+        );
         //__append__Attribute
 
 
@@ -125,9 +138,9 @@ module.exports = class PROFILE extends Component {
            </section>
         </div>
         <div style="width: 100%">
-        <div *ngFor="let item of page.settingList" style="width:100%;
+        <div *ngFor="let item of %settingList%" style="width:100%;
            padding: 10px; margin: 0px 0px ;">
-           <div (click)="item.function" fxLayout="row wrap" style="margin-top: 1rem;
+           <div (click)="%callfunction-name%(item.name)" fxLayout="row wrap" style="margin-top: 1rem;
               margin-right: 145px !important;" fxLayoutAlign="none stretch" [fxShow]="true"><img src="{{item.img}}"
               style="margin:0px 25px; height:22px!important;"><span style="float: right;
               margin-right: 5px;">
